@@ -16,7 +16,7 @@ Install nodemon to be able to live reload both the server and the frontend:
 
 Run your server with the follwing:
 
-```"sudo nodemon -e js,pug,css --exec 'npm run start'```
+```sudo nodemon -e js,pug,css --exec 'npm run start'```
 
 Open a new terminal tab and run your webpacker using the following:
 

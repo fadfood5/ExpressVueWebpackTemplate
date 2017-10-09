@@ -1,0 +1,644 @@
+body {
+	font: 14px "Nunito";
+	/*font-family: 'Abel', sans-serif;*/
+	/*background-color: #eee;*/
+	background-color: white; //padding-top: 70px;
+}
+
+#table input[type="checkbox"]{
+	position: unset;
+	left: unset;
+	opacity: 1;
+}
+
+.highlighter{
+	background-color: lightgreen;
+}
+.hidden{
+	display: none;
+}
+
+.padLeft {
+	padding-left: 15px;
+}
+
+.blackFont {
+	color: black;
+}
+
+.handCursor {
+	cursor: hand;
+}
+
+#homebutton:hover{
+	cursor: hand;
+}
+
+a {
+	color: #00B7FF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.contact {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.large {
+	font-size: 24px;
+}
+
+.clock {
+	width: 50%;
+	margin: 0 auto;
+}
+
+ul {
+	font-size: 30;
+	font-weight: bold;
+}
+
+li {
+	font-size: 0;
+	font-weight: normal;
+}
+
+.littleForm {
+	width: 25%;
+}
+
+.back {
+	color: #9ae596
+}
+
+#map {
+	height: 40%;
+	width: 30%;
+	border: 3px solid black;
+	margin: 0 auto;
+}
+
+.result {
+	font-size: 35px;
+	font-weight: strong;
+}
+
+#closebutton:hover {
+	color: red;
+}
+
+ul.options li {
+	background: #def url("cross_bright.png") no-repeat 98% center;
+	margin: 1px;
+	padding: 0.1em 0.3em;
+	cursor: pointer;
+	color: #46a;
+	font-size: 12;
+	border: solid 1px #cde;
+}
+
+#loginmodalbody {
+	width: 30%;
+	margin-top: 100px;
+}
+
+#regmodalbody {
+	width: 30%;
+	margin-top: 100px;
+}
+
+#logonav {
+	width: 7%;
+	height: 7%;
+}
+
+#logobig {
+	width: 30%;
+	height: 30%;
+}
+
+#quest {
+	font-size: 15;
+}
+
+#myContactForm {
+	height: 85% !important;
+}
+
+#myContact {
+	overflow: hidden;
+}
+
+#savebutton {
+	margin: 5px;
+}
+
+#callbutton {
+	margin: 5px;
+}
+
+
+/*label { width: 200px; float: left; margin: 0 20px 0 15; }*/
+
+span {
+	display: block;
+	margin: 0 0 3px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+input {
+	width: 200px;
+	border: 1px solid #000;
+	padding: 5px;
+}
+
+#signout {
+	width: 65px;
+	margin-left: -150px;
+	margin-bottom: -15px;
+}
+
+.inline {
+	/*width: 600px;*/
+	display: inline-block !important;
+}
+
+#panelit {
+	/*width: 600px;*/
+	display: inline-block !important;
+}
+
+#moveright {
+	list-style-type: none;
+	float: right;
+}
+
+#uuidlabel {
+	width: 300px;
+}
+
+.container .row {
+	margin-left: -0.75rem;
+	margin-right: -0.75rem;
+}
+
+.row {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.row .col.s12 {
+	width: 100%;
+	margin-left: auto;
+	left: auto;
+	right: auto;
+}
+
+.row .col {
+	float: left;
+	box-sizing: border-box;
+	padding: 0 0.75rem;
+}
+
+.card-panel {
+	transition: box-shadow .25s;
+	padding: 20px;
+	margin: 0.5rem 0 1rem 0;
+	border-radius: 2px;
+	background-color: #fff;
+}
+
+.black-text {
+	color: black !important;
+	line-height: normal !important;
+	height: 46px !important;
+}
+
+.white {
+	background-color: #FFFFFF !important;
+}
+
+.icon-block {
+	padding: 0 15px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.white-text {
+	color: #FFFFFF !important;
+}
+
+.card-container {
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 90%;
+}
+
+.row .col.m4 {
+	width: 33.3333333333%;
+	margin-left: auto;
+	left: auto;
+	right: auto;
+}
+
+.light {
+	font-weight: 300;
+}
+
+#bg {
+	background-image: url("bg.jpg");
+}
+
+#bgForm {
+	background-color: #fff;
+	border-radius: 25px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: green;
+}
+
+.jumbotron {
+	background-color: white;
+}
+
+#foot {
+	margin-top: -30px;
+	/*background-color: #eee;*/
+	background-color: white;
+}
+
+#contact_specialty {
+	margin-top: -1rem !important;
+}
+
+#contact_month {
+	margin-top: -1rem !important;
+}
+
+#contact_pay {
+	margin-top: -1rem !important;
+}
+
+#contact_shift {
+	margin-top: -1rem !important;
+}
+
+#drop1 {
+	display: inline-block;
+	height: 15;
+}
+
+#switch1 {
+	display: inline-block;
+	margin: 5px;
+}
+
+#LeadModal {
+	width: 100%;
+	height: 90%;
+	top: 6.75% !important;
+	bottom: auto !important;
+}
+
+#AddLeadModal {
+	width: 100%;
+	height: 90%;
+	top: 6.75% !important;
+	bottom: auto !important;
+}
+
+#DataLeadModal {
+	width: 100%;
+	height: 90%;
+	top: 6.75% !important;
+	bottom: auto !important;
+}
+
+#UploadLeadModal {
+	width: 100%;
+	height: 90%;
+	top: 6.75% !important;
+	bottom: auto !important;
+}
+
+#Mass_Modal {
+	width: 30%;
+	height: 40%;
+	top: 30% !important;
+	bottom: auto !important;
+}
+
+#DelModal {
+	width: 30%;
+	height: 20%;
+	top: 30% !important;
+	bottom: auto !important;
+}
+
+#PSTbutton {
+	display: block;
+}
+
+#ESTbutton {
+	display: block;
+}
+
+#CSTbutton {
+	display: block;
+}
+
+#MSTbutton {
+	display: block;
+}
+
+.modalSmall {
+	width: 50%;
+}
+
+.modalAlert {
+	width: 30%;
+	height: 400px;
+}
+
+.bar:hover {
+	background-color: #fff;
+}
+
+.closeMaterial {
+	float: right;
+	margin-top: -15px;
+}
+
+.closeMaterial button {
+	height: 40px;
+	width: inherit 50%;
+}
+
+.float {
+	width: 20%;
+}
+
+.show_login {}
+
+.show_register {}
+
+.login_form {}
+
+.register {}
+
+.attendee {
+	width: 50%;
+}
+
+.organizer {
+	width: 50%;
+}
+
+
+/*
+* {
+  border-radius: 0 !important;
+}
+*/
+
+
+/*#navbarLi {
+    padding: 15px;
+}*/
+
+.aLi {
+	font-size: 2rem;
+}
+
+
+/*
+nav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+}*/
+
+.buttonCenter {
+	margin: auto 0;
+}
+
+.input-field .prefix {
+	margin-top: 8px;
+}
+
+
+/*.nav-wrapper .brand-logo img {
+    height: 56px;
+}*/
+
+.caret {
+	border-color: transparent !important;
+}
+
+.heightInherit {
+	height: inherit;
+	display: block;
+}
+
+.heightInherit:hover {
+	height: inherit;
+}
+
+.searchLi {
+	display: inline-block;
+	width: 23%;
+}
+
+.page-navigation a {
+	color: #444;
+	display: inline-block;
+	font-size: 1.8rem;
+	padding: 0 10px;
+}
+
+.page-navigation a[data-selected] {
+	background-color: #29b6f6;
+}
+
+.paginationbutton:focus {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.paginationbutton:active {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.paginationbutton:hover {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.center {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+
+.nodisplay {
+	display: none;
+}
+
+#NDA {
+	height: 50%;
+	width: 100%;
+	padding: 0 10%;
+}
+
+nav {
+	background-color: #29b6f6 !important;
+}
+
+.navLogo{
+	font-weight:bold;
+	font-size: 2.1em;
+	display: inline; 
+	margin: 0 auto;
+}
+
+.callerCards {
+	padding: 0px 75px;
+}
+
+.cardButton {
+	margin-top: 30px;
+}
+
+.lightBlue {
+	color: #29b6f6;
+}
+
+.closeButton {
+	color: #FFF;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+
+.whiteFont{
+	color: #FFF !important;
+	text-decoration: none !important;
+}
+
+#foot {
+	background-color: #29b6f6;
+	color: #FFF;
+}
+
+.tableHeader{
+	position: absolute;
+	top: 8%;
+}
+
+.tableData{
+	padding: 15px 60px;
+	text-align: center;
+}
+
+.subBar{
+	//padding-left: 20px;
+	background-color: #fff;
+  width: 100%;
+  z-index: 1;
+}
+
+.subRow{
+	//max-width: 80%;
+}
+
+.subHead{
+	//width: 10%;
+}
+
+.callerButton{
+	width: 100px;
+}
+
+.DELButton {
+	width: 110px;
+	background-color: red;
+}
+
+.SMSButton {
+	width: 100px;
+}
+
+.uploadButton{
+	width: 175px;
+}
+
+.doDisplay{
+	display: block;
+}
+
+.noDisplay{
+	display: none;
+}
+
+#table_filter{
+	float: left;
+}
+
+#table_length{
+	display: none;
+}
+
+.setWidth{
+	width: 160px !important;
+	text-align: center;
+}
+
+.marginButton{
+	margin: 5px;
+}
+
+#table_paginate{
+	text-align: center;
+}
+
+#table_paginate span{
+ display: inline-block;
+}
+
+#table_paginate span:hover{
+	cursor: pointer;
+}
+
+.paginate_button{
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+#table_filter{
+	margin: 0 auto;
+}
+
+.hiddendisplay{
+	visibility: hidden;
+}
+
+.whiteFont{
+	color:#FFF;
+}
+
+.marginActions{
+	padding: 0 10px;
+}
+
+.highlight{
+	display: inline-block;
+}

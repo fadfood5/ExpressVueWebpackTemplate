@@ -1,7 +1,7 @@
 {
-  "name": "leapcaller",
+  "name": "expressvuewebpacktemplate",
   "version": "1.0.0",
-  "description": "This is a Phone calling service for LeapDoctor Recruiting!",
+  "description": "An express server template that uses webpack to precompile vue components. Vuetify (vue material design) is also installed.",
   "main": "app.js",
   "dependencies": {
     "ajv": "^5.1.1",
@@ -133,16 +133,8 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=development webpack --progress --hide-modules"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Darksole/LeapCalls.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Darksole/LeapCalls/issues"
-  },
-  "homepage": "https://github.com/Darksole/LeapCalls#readme",
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",

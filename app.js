@@ -46,9 +46,6 @@ var server = http.createServer(app);
 var port = 80;
 server.listen(port);
 var io = require('socket.io').listen(server);
-var clients = [];
-global.api = 3000;
-
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 // const HashStrategy = require('passport-hash').Strategy;
@@ -77,7 +74,7 @@ function checkNull(data) {
     }
 }
 // Connection to socket
-io.on('connection', function(socket) {
+io.on('connection', function (socket) {
     console.log('User connected: ' + socket.id);
 });
 
@@ -107,16 +104,16 @@ function onError(error) {
     var bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
     // handle specific listen errors with friendly messages
     switch (error.code) {
-    case 'EACCES':
-        console.error(bind + ' requires elevated privileges');
-        process.exit(1);
-        break;
-    case 'EADDRINUSE':
-        console.error(bind + ' is already in use');
-        process.exit(1);
-        break;
-    default:
-        throw error;
+        case 'EACCES':
+            console.error(bind + ' requires elevated privileges');
+            process.exit(1);
+            break;
+        case 'EADDRINUSE':
+            console.error(bind + ' is already in use');
+            process.exit(1);
+            break;
+        default:
+            throw error;
     }
 }
 
@@ -136,18 +133,22 @@ app.use(bodyParser.urlencoded({
 //app.use(cookieParser());
 app.use(flash());
 
-app.post('/login', function(req, res) {
+app.post('/login', function (req, res) {
     console.log('logging in')
     database.db('myproject').collection('users').findOne({
-        'email':  req.body.email
-    }, function(err, thedata){
+        'email': req.body.email
+    }, function (err, thedata) {
         if (err || !thedata) {
-            res.json({"user": null});
-        }else{
-            if(req.body.password !== thedata.password){
+            res.json({
+                "user": null
+            });
+        } else {
+            if (req.body.password !== thedata.password) {
                 console.log('wrong password');
-                res.json({"user": null});
-            }else if(req.body.password === thedata.password){
+                res.json({
+                    "user": null
+                });
+            } else if (req.body.password === thedata.password) {
                 console.log('correct password');
                 delete thedata['password'];
                 res.json(thedata);
@@ -155,23 +156,26 @@ app.post('/login', function(req, res) {
         }
     })
 });
-app.post('/register', function(req, res){
+app.post('/register', function (req, res) {
     console.log(req.body);
-    database.collection('users').findOne({email: req.body.email}, function(err, user){
-        if(err){
+    database.collection('users').findOne({
+        email: req.body.email
+    }, function (err, user) {
+        if (err) {
             console.log(err);
-        }else if (user) {
-            res.json({"user": null});
-        }else{
+        } else if (user) {
+            res.json({
+                "user": null
+            });
+        } else {
             let user = req.body;
-            if(user.coach === false){
-                user.subcoaches = [];
-            }
             database.collection('users').insert(user);
-            res.json({"user": user});
+            res.json({
+                "user": user
+            });
         }
     })
 });
-app.post('/logout', function(req, res){
+app.post('/logout', function (req, res) {
     res.redirect('/');
 });
